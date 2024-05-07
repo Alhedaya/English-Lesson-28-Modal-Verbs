@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson 28 - Modal Verbs </title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<style>
+body{ background: linear-gradient(45deg, white, #D1E4C4, white); 
+height: 780vh; }
+.buttons{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:15px;
+  margin-top:10px;
+  font-size:30px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:210px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  
+}
+.buttons:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons:active{
+opacity: 0.7;
+}
+
+
+.tooltips{
+ position:relative;
+ display:block;
+ text-align:center;
+ font-size:70px;
+ font-weight:bold;
+ cursor:pointer;
+ 
+}
+.tooltips .tooltipstext{
+ visibility:hidden;
+ position:absolute;
+ z-index:1;
+ left:100px;
+ width:1100px;
+ top:125%;
+ background: #F1F7ED;
+ font-size:40px;
+ font-weight:normal;
+ padding: 5px;
+ border-radius: 6px;
+ box-shadow: 5px 0px 7px black;
+ text-align: left;
+ 
+}
+.tooltips:hover .tooltipstext{  visibility: visible;}
+
+
+.dropdown{ display: flex;}
+ .dropdown button{
+  background-color: #D1E4C4; color: black; padding: 10px 30px;
+  border:none; cursor:pointer; box-shadow: 5px 5px 7px black;
+  transition:0.05s; border-radius:4px;
+ }
+
+ .dropdown a{
+  display: flex; text-decoration: none; text-align: center; padding: 10px 23px; margin-top:10px; background-color: #D1E4C4;
+  color:black; box-shadow: 5px 5px 7px black; border-radius:4px; margin-left:5px;
+ }
+
+ .dropdown .content{
+   position: absolute; min-width:100px;
+  display:none;
+ }
+
+ .dropdown:hover .content{ 
+  display:flex;
+ }
+ .dropdown:hover button{
+  background-color: #F1F7ED; color:black;
+ }
+ .dropdown a:hover{
+  background-color: #F1F7ED; color:black;
+ }
+<nav><div class="dropdown">
+ <button>Lessons</button>
+ <div class="content">
+  <a href="lesson1new.html" target="_blank">Lesson 1</a>
+  <a href="lesson2new.html" target="_blank">Lesson 2</a>
+  <a href="lesson3new.html" target="_blank">Lesson 3</a>
+  <a href="lesson4new.html" target="_blank">Lesson 4</a>
+  <a href="lesson5new.html" target="_blank">Lesson 5</a>
+  <a href="lesson6new.html" target="_blank">Lesson 6</a>
+  <a href="lesson7new.html" target="_blank">Lesson 7</a>
+  <a href="lesson8new.html" target="_blank">Lesson 8</a>
+  <a href="lesson9new.html" target="_blank">Lesson 9</a>
+  <a href="lesson10new.html" target="_blank">Lesson 10</a>
+  <a href="lesson11new.html" target="_blank">Lesson 11</a>
+  <a href="lesson12new.html" target="_blank">Lesson 12</a>
+  <a href="lesson13new.html" target="_blank">Lesson 13</a>
+ </div>
+</div></nav>
+
+
+
+.p1 {}
+.p4 { font-size: 40px; cursor:pointer;}
+.p1 { font-size: 30px; cursor:pointer;}
+
+.div1 {display: grid; grid-template-columns: 900px; justify-content: center; margin-top: 20px; cursor:pointer;}
+.div2 {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr ; margin-bottom: 30px;}
+.div3 {display: grid; grid-template-columns: 1fr 1fr 1fr  ; margin-bottom: 30px;}
+.div4  {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr ; margin-bottom: 30px;}
+.div5 {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; margin-bottom: 30px;}
+.div6 {display: grid; grid-template-columns: 1fr 1fr;}
+.div7 {text-align: center; font-size: 40px;}
+.div8 {display: grid; grid-template-columns: 1fr 1fr 1fr;}
+.img {width:300px; height: 270px;}
+.img2 {width:300px; height: 270px; }
+
+@media screen and (max-width: 1000px){
+.p4{ font-size: 30px;}
+.p1 {font-size: 25px;}
+
+.div1 {display: grid; grid-template-columns: 1fr;}
+.div2 {display: grid; grid-template-columns: 1fr;}
+.div3 {display: grid; grid-template-columns: 1fr;}
+.div4 {display: grid; grid-template-columns: 1fr;}
+.div5 {display: grid; grid-template-columns: 1fr;}
+.div6 {display: grid; grid-template-columns: 1fr;}
+.div7 {text-align: center; font-size: 30px;}
+.div8 {display: grid; grid-template-columns: 1fr ;}
+.wrapper { overflow-x: hidden; width: 100%; background: linear-gradient(45deg, white, #D1E4C4, white);}
+
+.img{width:150px; height: 135px;}
+.img2 {width:150px; height: 135px; }
+
+
+.tooltips{
+ position:relative;
+ display:block;
+ text-align: center;
+ font-size:50px;
+ font-weight:bold;
+ cursor:pointer;
+ 
+}
+.tooltips .tooltipstext{
+ visibility:hidden;
+ position:absolute;
+ z-index:1;
+ left:100px;
+ width:1100px;
+ top:125%;
+ background: #F1F7ED;
+ font-size:40px;
+ font-weight:normal;
+ padding: 5px;
+ border-radius: 6px;
+ box-shadow: 5px 0px 7px black;
+ 
+}
+.tooltips:hover .tooltipstext{  visibility: hidden;}
+
+.buttons{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:5px;
+  font-size:30px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:250px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 25px;
+  margin-left: 5px;
+  
+}
+.buttons:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons:active{
+opacity: 0.7;
+}
+
+}
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+<div class="wrapper">
+<h1 class="tooltips"> Modal verbs  <span class="tooltipstext"> also known as modal auxiliaries or simply modals, are a special class of verbs in English that are used to express various attitudes or moods regarding actions or states.<br>
+They often indicate &middot;possibility &bull; necessity &bull; permission &bull; ability &bull; obligation. Unlike regular verbs, modal verbs do not have infinitive or participle forms, and they do not usually take an "<b>-s</b>" in the third person singular form. Here are the main modal verbs in English:</span> </h1> 
+
+<div class="div1" style="">
+
+
+<div style="text-align: left; font-size: 30px; background-color: #D1E4C4; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">
+
+<div style="text-align: left; font-size: 30px;">
+<div style="text-align: center; font-size: 40px;"><b> Can </b></div>
+Used to indicate &middot;ability &bull; possibility &bull;  permission &bull;  request.<br><br>
+
+
+&bull;  Ability: She can speak Spanish fluently.<br><hr>
+
+&bull;  Possibility: It can rain later.<br><hr>
+
+&bull; Permission: Can I borrow your pen?<br><hr>
+
+&bull;  Request: Can you help me with this?
+
+</div>
+</div>
+</div>
+
+<div class="div1" style=" ">
+
+
+<div style="text-align: left; font-size: 30px; background-color: #F1F7ED; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">
+
+<div style="text-align: left; font-size: 30px;">
+<div style="text-align: center; font-size: 40px;"><b> Could </b></div>
+
+The past tense form of "can," used to indicate &middot;past ability &bull;  polite requests &bull;  possibility.<br><br>
+
+
+&bull;  Past ability: When I was younger, I could run very fast.<br><hr>
+
+&bull;  Polite request: Could you please pass the salt?<br><hr>
+
+&bull;  Possibility: It could be expensive.
+
+</div>
+</div>
+</div>
+
+
+<div  class="div1" style=" ">
+
+
+<div style="text-align: left; font-size: 30px; background-color: #D1E4C4; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">
+
+<div style="text-align: left; font-size: 30px;">
+<div style="text-align: center; font-size: 40px;"><b> May </b></div>
+Used to indicate &middot;permission &bull;  possibility &bull;  polite request.<br><br>
+
+
+&bull; Permission: You may leave the room now.<br><hr>
+
+&bull; Possibility: It may rain tomorrow.<br><hr>
+
+&bull; Polite request: May I ask you a question?
+
+</div>
+</div>
+</div>
+
+<div  class="div1" style=" ">
+
+
+<div style="text-align: left; font-size: 30px; background-color: #F1F7ED; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">
+
+<div style="text-align: left; font-size: 30px;">
+<div style="text-align: center; font-size: 40px;"><b>  Might </b></div>
+ Similar to "may," used to indicate &middot;possibility especially when the possibility is uncertain or less likely.<br><br>
+
+&bull; Possibility: He might come to the party tonight.<br><hr>
+
+&bull; Uncertain future: I might go to the gym later.
+</div>
+</div>
+</div>
+
+
+<div  class="div1" style=" ">
+
+<div style="text-align: left; font-size: 30px; background-color: #D1E4C4; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">
+
+<div style="text-align: left; font-size: 30px;">
+<div style="text-align: center; font-size: 40px;"><b> Must </b></div>
+Used to indicate &middot;obligation &bull;  necessity &bull;  strong recommendation &bull;  deduction.<br><br>
+
+
+&bull; Obligation: You must finish your homework before going out.<br><hr>
+
+&bull; Necessity: We must find a solution to this problem.<br><hr>
+
+
+&bull; Strong recommendation: You must try this new restaurant.<br><hr>
+
+&bull; Deduction: She must be tired after working all day.
+
+</div>
+</div>
+</div>
+
+<div  class="div1" style=" ">
+
+
+<div style="text-align: left; font-size: 30px; background-color: #F1F7ED; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">
+
+<div style="text-align: left; font-size: 30px;">
+<div style="text-align: center; font-size: 40px;"><b>  Should </b></div>
+Used to indicate &middot;advice &bull;  recommendation &bull;  expectation &bull;  obligation that is less strong than "must."<br><br>
+
+&bull; Advice: You should eat more vegetables for better health.<br><hr>
+
+&bull; Recommendation: We should book our tickets in advance.<br><hr>
+
+&bull; Expectation: He should be here by now.<br><hr>
+
+&bull; Obligation &middot;less strong than "must": Students should attend all classes.
+</div>
+</div>
+</div>
+
+
+<div  class="div1" style=" ">
+
+<div style="text-align: left; font-size: 30px; background-color: #D1E4C4; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">
+
+<div style="text-align: left; font-size: 30px;">
+<div style="text-align: center; font-size: 40px;"><b> Would </b></div>
+Used to indicate &middot;polite requests &bull;  hypothetical situations &bull;  habits in the past.<br><br>
+
+
+&bull; Polite request: Would you please pass me the salt?<br><hr>
+
+&bull; Hypothetical situation: If I won the lottery, I would travel the world.<br><hr>
+
+&bull; Habit in the past: When we were kids, we would play outside every day.
+
+</div>
+</div>
+</div>
+
+<div  class="div1" style=" ">
+
+
+<div style="text-align: left; font-size: 30px; background-color: #F1F7ED; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">
+
+<div style="text-align: left; font-size: 30px;">
+<div style="text-align: center; font-size: 40px;"><b>  Will </b></div>
+Used to indicate &middot;future actions &bull;  intentions &bull;  promises &bull;  predictions.<br><br>
+
+&bull; Future action: I will call you later.<br><hr>
+
+&bull; Intention: We will start the project next week.<br><hr>
+
+&bull; Promise: I will always support you.<br><hr>
+
+&bull; Prediction: It will rain tomorrow.
+</div>
+</div>
+</div>
+
+<div  class="div1" style=" ">
+
+<div style="text-align: left; font-size: 30px; background-color: #D1E4C4; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">
+
+<div style="text-align: left; font-size: 30px;">
+<div style="text-align: center; font-size: 40px;"><b> Shall </b></div>
+Used to indicate &middot;future action  &bull;  obligation  &bull;  possibility. It's often used in formal contexts or in legal or contractual language.<br><br>
+
+
+&bull; Suggestions and Offers:<br>
+&emsp; &#9702; Shall we go for a walk?<br>
+&emsp; &#9702; Shall I help you with your bags?<br><hr>
+
+&bull; Formal Requirements or Laws:<br>
+&emsp; &#9702; All employees shall wear safety gear at all times.<br>
+&emsp; &#9702; The contract specifies that payment shall be made within 30 days.<br><hr>
+
+
+&bull; Future Actions or Intentions:<br>
+&emsp; &#9702; I shall call you when I arrive.<br>
+&emsp; &#9702; We shall meet again someday.<br><hr>
+
+&bull;  Commands or Directives:<br>
+&emsp; &#9702; You shall not enter this area without authorization.<br>
+&emsp; &#9702; Thou shalt not steal. from more formal or archaic contexts<br><hr>
+
+&bull; Predictions or Proposals:<br>
+&emsp; &#9702; The weather forecast suggests it shall rain tomorrow.<br>
+&emsp; &#9702; Shall we proceed with the plan?<br><hr>
+
+
+
+While "shall" is still used in some formal contexts, in everyday language, "will" is often used instead.
+</div>
+</div>
+</div>
+
+<div  class="div1" style=" ">
+
+
+<div style="text-align: left; font-size: 30px; background-color: #F1F7ED; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">
+
+<div style="text-align: left; font-size: 30px;">
+<div style="text-align: center; font-size: 40px;"><b>  Ought to </b></div>
+Used to indicate &middot;duty &bull; obligation &bull; advisability. It suggests that something is the right thing to do or the proper course of action.<br><br>
+
+&bull; Expressing Obligation or Duty:<br>
+&emsp; &#9702; You ought to finish your homework before watching TV.<br>
+&emsp; &#9702; We ought to help those in need.<br><hr>
+
+&bull; Expressing Moral or Ethical Standards:<br>
+&emsp; &#9702; She ought to apologize for what she said.<br>
+&emsp; &#9702; He ought to be more considerate of others.<br><hr>
+
+
+&bull; Giving Advice or Recommendations:<br>
+&emsp; &#9702; You ought to see a doctor if the pain persists.<br>
+&emsp; &#9702; They ought to invest in renewable energy for a sustainable future.<br><hr>
+
+&bull; Making Suggestions or Expressing Probability:<br>
+&emsp; &#9702; He ought to arrive soon; he left early.<br>
+&emsp; &#9702; It ought to rain today based on the forecast.<br><hr>
+
+&bull; Past Obligation or Regret:<br>
+&emsp; &#9702; I ought to have studied harder for the exam.<br>
+&emsp; &#9702; She ought not to have trusted him.<br><hr>
+
+"Ought to" is often followed by the base form of a verb. It's used in both formal and informal contexts, though it may sound slightly more formal compared to other modal verbs like "should."
+</div>
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+  var sound1 = new Audio();
+  sound1.src = "spectacles.mp3";
+
+  var sound2 = new Audio();
+  sound2.src = "pyjamas.mp3";
+
+  var sound3 = new Audio();
+  sound3.src = "tights.mp3";
+
+  var sound4 = new Audio();
+  sound4.src = "trousers.mp3";
+
+  var sound5 = new Audio();
+  sound5.src = "pants.mp3";
+
+  var sound6 = new Audio();
+  sound6.src = "jeans.mp3";
+
+  var sound7 = new Audio();
+  sound7.src = "shorts.mp3";
+
+  var sound8 = new Audio();
+  sound8.src = "boxers.mp3";
+
+  var sound9 = new Audio();
+  sound9.src = "knickers.mp3";
+
+  var sound10 = new Audio();
+  sound10.src = "pliers.mp3";
+
+  var sound11 = new Audio();
+  sound11.src = "scissors.mp3";
+
+  var sound12 = new Audio();
+  sound12.src = "binoculars.mp3";
+ 
+  var sound13 = new Audio();
+  sound13.src = "pincers.mp3";
+
+  var sound14 = new Audio();
+  sound14.src = "flock.mp3";
+
+  var sound15 = new Audio();
+  sound15.src = "herd.mp3";
+
+  var sound16 = new Audio();
+  sound16.src = "team.mp3";
+
+  var sound17 = new Audio();
+  sound17.src = "anitemof.mp3";
+
+  var sound18 = new Audio();
+  sound18.src = "itemsof.mp3";
+
+ 
+  var sound19 = new Audio();
+  sound19.src = "both.mp3";
+
+  var sound20 = new Audio();
+  sound20.src = "either.mp3";
+
+  var sound21 = new Audio();
+  sound21.src = "neither.mp3";
+
+  var sound22 = new Audio();
+  sound22.src = "afew.mp3";
+
+  var sound23 = new Audio();
+  sound23.src = "fewer.mp3";
+
+  var sound24 = new Audio();
+  sound24.src = "acoupleof.mp3";
+
+  var sound25 = new Audio();
+  sound25.src = "hundredsof.mp3";
+
+  var sound26 = new Audio();
+  sound26.src = "thousandsof.mp3";
+
+  var sound27 = new Audio();
+  sound27.src = "notmuch.mp3";
+
+  var sound28 = new Audio();
+  sound28.src = "abitof.mp3";
+
+  var sound29 = new Audio();
+  sound29.src = "alittle.mp3";
+
+  var sound30 = new Audio();
+  sound30.src = "agreatdealof.mp3";
+
+  var sound31 = new Audio();
+  sound31.src = "agooddealof.mp3";
+ 
+
+  
+
+
+</script>
+</body>
+</ht
